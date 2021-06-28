@@ -1,20 +1,7 @@
-### Hi there 👋
+![githubBanner](https://user-images.githubusercontent.com/4576425/123686375-595b4a80-d815-11eb-8ed5-a0934162e93d.jpg)
+
 ![Image for email](https://img.shields.io/badge/Email-ryan@ryanchoi.dev-orange?style=for-the-badge&logo=maildotru&link=mailto:ryan@ryanchoi.dev)
 ![Image for website](https://img.shields.io/badge/Personal%20Site-ryanchoi.dev-blue?style=for-the-badge&logo=curl&link=https://ryanchoi.dev)
-<!--
-**rmerk/rmerk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-
--->
 
 ```php
 <?php
@@ -48,9 +35,9 @@ class About extends Me
         ];
     }
 
-    public function getFutureGoal(): string
+    public function getCurrentlyLearning(): string
     {
-        return 'Currently learning React to build upon my known modern JavaScript frameworks.';
+        return "I'm Currently learning React to build upon my known modern JavaScript frameworks.";
     }
 }
 ```
