@@ -1,5 +1,6 @@
 ### Hi there 👋
-![Image of Yaktocat](https://img.shields.io/badge/Email-ryan@ryanchoi.dev-orange?style=for-the-badge&logo=maildotru&link=mailto:ryan@ryanchoi.dev)
+![Image for email](https://img.shields.io/badge/Email-ryan@ryanchoi.dev-orange?style=for-the-badge&logo=maildotru&link=mailto:ryan@ryanchoi.dev)
+![Image for website](https://img.shields.io/badge/Email-ryan@ryanchoi.dev-blue?style=for-the-badge&logo=curl&link=https://ryanchoi.dev)
 <!--
 **rmerk/rmerk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
