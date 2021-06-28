@@ -15,7 +15,8 @@ class About extends Me
         return [
             'workplace' => [
                 'company' => 'Total Expert',
-                'position' => 'Senior Software Engineer'        
+                'position' => 'Senior Software Engineer',
+                'years_employed' => 5
             ]
         ];
     }
@@ -23,15 +24,17 @@ class About extends Me
     public function getLeveragedSkills(): array
     {
         return [
-            Php::class,
-            PhpUnit::class,
-            Javascript::class,
-            Vuejs::class,
-            Vuex::class,
-            Jquery::class,
-            Html::class,
-            Css::class,
-            Sass::class
+            'PHP',
+            'PHPUnit',
+            'JavaScript',
+            'Vue.js',
+            'Vuex',
+            'Vue-Jest',
+            'jQuery',
+            'HTML5',
+            'CSS3',
+            'SASS',
+            'Webpack'
         ];
     }
 
