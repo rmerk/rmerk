@@ -3,44 +3,31 @@
 ![Image for email](https://img.shields.io/badge/Email-ryan@ryanchoi.dev-orange?style=for-the-badge&logo=maildotru&link=mailto:ryan@ryanchoi.dev)
 ![Image for website](https://img.shields.io/badge/Personal%20Site-ryanchoi.dev-blue?style=for-the-badge&logo=curl&link=https://ryanchoi.dev)
 
-```php
-<?php
+```ts
+class AboutMe {
+  skills = [
+    "Vue.js",
+    "TypeScript",
+    "JavaScript (ES6+)",
+    "Pinia",
+    "Vue Test Utils",
+    "Vitest",
+    "Jest",
+    "HTML5",
+    "CSS3",
+    "SASS/SCSS",
+    "Webpack",
+    "Vite",
+    "Responsive Design",
+  ];
 
-namespace RyanChoi;
+  const currentlyLearning = "Exploring Nuxt.js for building powerful Vue applications that integrate with generative AI.";
 
-class About extends Me
-{
-    public function getCurrentWorkplace(): array
-    {
-        return [
-            'workplace' => [
-                'company' => 'Total Expert',
-                'position' => 'Senior Software Engineer',
-                'years_employed' => 5
-            ]
-        ];
-    }
-
-    public function getLeveragedSkills(): array
-    {
-        return [
-            'PHP',
-            'PHPUnit',
-            'JavaScript',
-            'Vue.js',
-            'Vuex',
-            'Vue-Jest',
-            'jQuery',
-            'HTML5',
-            'CSS3',
-            'SASS',
-            'Webpack'
-        ];
-    }
-
-    public function getCurrentlyLearning(): string
-    {
-        return "I'm Currently learning React to build upon my known modern JavaScript frameworks.";
-    }
+  about() {
+    return "Hi! I'm Ryan Choi, a passionate frontend developer who loves crafting seamless user interfaces with Vue.js and TypeScript. Whether it's creating scalable components or optimizing for performance, I'm all about delivering delightful web experiences.";
+  }
 }
+
+const ryan = new AboutMe();
+console.log(ryan.about());
 ```
