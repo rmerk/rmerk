@@ -33,7 +33,25 @@ A production retrieval-augmented chatbot that ingests company documentation (inc
 
 ## Tech stack
 
-TypeScript across Vue 3 / Nuxt (deepest) and React + Next.js. Backend in Node via Nuxt server routes. AI stack: shipped RAG end-to-end on self-hosted inference (Ollama/Mistral + pgvector, Drizzle for SQL) with hybrid retrieval and prompt-injection defense; currently building with on-device Gemma 4 E2B on iOS. Vitest for testing, Vite for builds. Happy to pick up whatever the team uses.
+**Core Languages & Frontend**
+* **TypeScript:** Deepest expertise in **Vue 3** and **Nuxt**; experienced with **React** and **Next.js**.
+* **Frontend Competencies:** Component Architecture, Vue Composition API, React Hooks, State Management (Pinia, Redux), Client-Side Routing (Vue Router, React Router), and Server-Side Rendering.
+
+**Backend & Database**
+* **Backend:** Node.js (implemented via Nuxt server routes), PHP, Python, and C#.
+* **Databases & ORM:** PostgreSQL (including `pgvector` for AI), MySQL, and MariaDB, interfaced via Drizzle ORM.
+
+**AI & Machine Learning Stack**
+* **RAG Architecture:** Shipped end-to-end pipelines featuring hybrid retrieval and prompt-injection defense.
+* **Self-Hosted Inference:** Experience with Ollama and Mistral.
+* **Mobile AI:** Currently building with on-device Gemma 4 E2B on iOS.
+
+**Tooling & Testing**
+* **Build Tools:** Vite
+* **Testing:** Vitest (utilizing `.spec.ts` format for unit testing)
+
+**Team Philosophy**
+* Adaptable and happy to pick up whatever technologies the team uses.
 
 ---
 
