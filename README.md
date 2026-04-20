@@ -1,86 +1,46 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/4576425/123686375-595b4a80-d815-11eb-8ed5-a0934162e93d.jpg" alt="GitHub Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:1e293b,100:64748b&section=header" alt="" width="100%" />
 </p>
 
-<h1 align="center">Hi there, I'm Ryan Choi 👋</h1>
+<h1>Ryan Choi</h1>
 
-<p align="center">
-  <em>A passionate frontend developer specializing in Vue.js & TypeScript.<br /> I love crafting seamless UI/UX and delivering delightful web experiences.</em>
+<p>
+  <strong>Senior frontend engineer · 10+ years · Vue &amp; React</strong><br/>
+  Building AI-powered products. Recently shipped a production RAG chatbot that lets customers get answers in natural language instead of searching and skimming the help center.<br/><br />
+  <strong>Open to senior frontend or full-stack roles where AI is part of the product.</strong>
 </p>
 
-<p align="center">
-  <a href="mailto:ryan@ryanchoi.dev">
-    <img alt="Email" src="https://img.shields.io/badge/Email-ryan@ryanchoi.dev-orange?style=for-the-badge&logo=maildotru">
-  </a>
-  <a href="https://ryanchoi.dev" target="_blank">
-    <img alt="Personal Site" src="https://img.shields.io/badge/Personal%20Site-ryanchoi.dev-blue?style=for-the-badge&logo=link">
-  </a>
-  <!-- Add more badges here: LinkedIn, Twitter, etc. -->
-  <!-- Example: <a href="https://linkedin.com/in/your-profile" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"></a> -->
+<p>
+  <a href="mailto:ryan@ryanchoi.dev?subject=Introduction%20via%20your%20GitHub%20profile">Email</a> ·
+  <a href="https://ryanchoi.dev" target="_blank">ryanchoi.dev</a> ·
+  <a href="https://www.linkedin.com/in/ryanchoimn" target="_blank">LinkedIn</a>
 </p>
-
-## 🚀 About Me
-
-I'm dedicated to building scalable components and optimizing for performance to create intuitive and responsive web applications.
-
-## 🛠️ Tech Stack & Skills
-
-<p align="left">
-  <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue.js"/>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/Pinia-FFD859?style=for-the-badge&logo=pinia&logoColor=black" alt="Pinia"/> <!-- Pinia logo exists! -->
-  <img src="https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white" alt="Vitest"/>
-  <img src="https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white" alt="Jest"/>
-  <img src="https://img.shields.io/badge/Vue_Test_Utils-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue Test Utils"/> <!-- Using Vue logo -->
-  <br/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
-  <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="SASS/SCSS"/>
-  <img src="https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=webpack&logoColor=black" alt="Webpack"/>
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/>
-  <img src="https://img.shields.io/badge/Responsive_Design-FF69B4?style=for-the-badge&logoColor=white" alt="Responsive Design"/> <!-- Custom badge -->
-</p>
-
-## 🌱 Currently Exploring
-
-I'm diving deeper into **Nuxt.js** to build powerful, server-rendered Vue applications, particularly interested in integrating them with **Generative AI** technologies.
 
 ---
 
-## ✨ Fun Fact: My Profile as Code
+## Recent work
 
-```typescript
-class AboutMe {
-  name = "Ryan Choi";
-  title = "Frontend Developer";
-  focus = ["Vue.js", "TypeScript"];
+### Pathway Chatbot: privacy-first RAG documentation assistant
+A production retrieval-augmented chatbot that ingests company documentation (including a live Zendesk knowledge-base sync via n8n) and answers end-user questions with streaming generation. Entire stack runs on the customer's infrastructure: embeddings and LLM inference via Ollama (Mistral + nomic-embed-text), pgvector for retrieval. No data leaves the box.
 
-  skills = [
-    "Vue.js", "TypeScript", "JavaScript (ES6+)", "Pinia", "Vue Test Utils",
-    "Vitest", "Jest", "HTML5", "CSS3", "SASS/SCSS", "Webpack", "Vite",
-    "Responsive Design",
-  ];
-
-  learning = "Exploring Nuxt.js for building powerful Vue applications that integrate with generative AI.";
-
-  getIntroduction() {
-    return `Hi! I'm ${this.name}, a passionate ${this.title} who loves crafting seamless user interfaces with ${this.focus.join(' & ')}. Whether it's creating scalable components or optimizing for performance, I'm all about delivering delightful web experiences.`;
-  }
-}
-
-const ryan = new AboutMe();
-// console.log(ryan.getIntroduction());
-// console.log("Skills:", ryan.skills);
-// console.log("Learning:", ryan.learning);
-```
+- **Impact:** Faster, easier documentation lookup for customers; conversational Q&A with streaming responses replaces searching and skimming through the help center.
+- **Stack:** Nuxt 4 / Vue 3 · Nuxt server routes (Node) · PostgreSQL + pgvector · Drizzle · Ollama (Mistral + nomic-embed-text) · Redis · n8n for Zendesk sync · Docker Compose
+- **Notable engineering:** hybrid retrieval with query rewriting, reranking, and RRF · prompt-injection defense pipeline (direct- and context-injection risk assessment, hard-block / soft-allow / sanitize modes, hardened system prompt) · streaming chat, message regeneration, feedback capture
+- **My role:** Sole developer and designer on the project.
+- **Link:** Private; happy to walk through in an interview.
 
 ---
 
-<!-- Optional: Add GitHub Stats -->
-<!-- Uncomment and replace 'your-github-username'
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=your-github-username&show_icons=true&theme=radical" alt="GitHub Stats">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=your-github-username&layout=compact&theme=radical" alt="Top Languages">
-</p>
--->
+## Tech stack
+
+TypeScript across Vue 3 / Nuxt (deepest) and React + Next.js. Backend in Node via Nuxt server routes. AI stack: shipped RAG end-to-end on self-hosted inference (Ollama/Mistral + pgvector, Drizzle for SQL) with hybrid retrieval and prompt-injection defense; currently building with on-device Gemma 4 E2B on iOS. Vitest for testing, Vite for builds. Happy to pick up whatever the team uses.
+
+---
+
+## Currently building
+
+iOS macronutrient tracker where users photograph a meal and get nutritional entries back from Gemma 4 E2B running on-device (via LiteRT-LM). No backend, no account, no network. Data stays on the phone. Built in Swift 6 with strict concurrency, SwiftData, and a dedicated `ModelActor` keeping inference off the main thread. Attacking the manual-entry friction that kills most food-logging habits.
+
+---
+
+<sub>Fastest way to reach me: <a href="mailto:ryan@ryanchoi.dev">ryan@ryanchoi.dev</a>. Based in Minnesota, open to remote or hybrid.</sub>
