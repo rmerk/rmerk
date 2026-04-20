@@ -11,9 +11,9 @@
 </p>
 
 <p>
+  <a href="https://www.linkedin.com/in/ryanchoimn" target="_blank">LinkedIn</a>
   <a href="mailto:ryan@ryanchoi.dev?subject=Introduction%20via%20your%20GitHub%20profile">Email</a> ·
   <a href="https://ryanchoi.dev" target="_blank">ryanchoi.dev</a> ·
-  <a href="https://www.linkedin.com/in/ryanchoimn" target="_blank">LinkedIn</a>
 </p>
 
 ---
